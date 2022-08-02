@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>San Ciro Sport</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+  <header>
+    <a href="#" class="menu-btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </a>
+    <div class="img-header-container">
+      <a href="index.html">
+        <img src="images/san_ciro.png" alt="San Ciro" title="Logo San Ciro">
+      </a>
+    </div>
+    <div class="main-header-container">
+      <div>
+        <form action="productos.html">
+          <input type="text" placeholder="Busca tu articulo" />
+          <button type="submit">Buscar</button>
+        </form>
+      </div>
+      <h1> San Ciro Sport </h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html">INICIO |</a>
+          </li>
+          <li>
+            <a href="productos.html">PRODUCTOS |</a>
+          </li>
+          <ul id="products-subitems">
+            <li> Dama</li>
+            <li> Hombre</li>
+            <li> Niños </li>
+            <li> Accesorios </li>
+          </ul>
+          <li>
+            <a href="servicios.html">SERVICIOS |</a>
+          </li>
+          <li>
+            <a href="blog.html">BLOG |</a>
+          </li>
+          <li>
+            <a href="contacto.html">CONTACTO</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="profile-header-container">
+      <ul>
+        <li>
+          <a href="#">Mi Cuenta</a>
+        </li>
+        <li>
+          <a href="#">Favoritos</a>
+        </li>
+        <li>
+          <a href="#">Carrito</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <div class="image-contact-container">
+      <img src="images/local.jpg" alt="Foto local" title="Foto Local" class="image_contact"/>
+    </div>
+    <div>
+      <h4>ESCRIBENOS</h4>
+      <form id="contact_form" action="gracias_contacto.html">
+        <div class="form_container">
+          <div class="control_container">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" />
+          </div>
+          <div class="control_container">
+            <label for="lastname">Apellido</label>
+            <input type="text" id="lastname" name="lastname"/>
+          </div>
+          <div class="control_container">
+            <label for="email">Correo electronico</label>
+            <input type="email" id="email" name="email"/>
+          </div>
+          <div class="control_container"> 
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" rows="5">
+            </textarea>
+          </div>
+        </div>
+        <div class="button">
+          <button type="submit">Enviar</button>
+        </div>
+      </form>
+    </div>
+    
+  </main>
+
+  <footer>
+    <div id="footer-container">
+      <div class="about-footer-container">
+        <h4> San Ciro Sport</h4>
+        <ul>
+          <li>
+            <a href="#">Quienes somos</a>
+          </li>
+          <li>
+            <a href="#">Sucursales</a>
+          </li>
+          <li>
+            <a href="#">Trabajá con nosotros</a>
+          </li>
+        </ul>
+      </div>
+  
+      <div class="account-footer-container">
+        <h4> Mi cuenta</h4>
+        <ul>
+          <li>
+            <a href="#">Mis datos</a>
+          </li>
+          <li>
+            <a href="#">Mis direcciones</a>
+          </li>
+          <li>
+            <a href="#">Mis compras</a>
+          </li>
+          <li>
+            <a href="#">Favoritos</a>
+          </li>
+        </ul>
+      </div>
+  
+      <div class="social-footer-container">
+        <div>
+          <h4>RECIBE NUESTRAS NOVEDADES</h4>
+          <form action="#">
+            <input type="email" placeholder="Ingresa tu e-mail" />
+            <button type="submit">Suscribete</button>
+          </form>
+        </div>
+        <div class="social-links">
+          <div class="social-link">
+            <a href="https://www.gmail.com" target="_blank">Correo electronico</a>
+          </div>
+          <div class="social-link">
+            <a href="https://www.facebook.com/salernosanciro" target="_blank">Facebook</a>
+          </div>
+          <div class="social-link">
+            <a href="https://www.instagram.com/salernodeportessancirosport/" target="_blank">Instagram</a>
+          </div>
+          <div class="social-link">
+            <a href="https://web.whatsapp.com/" target="_blank">Whatsapp</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright-footer-container">
+      <p>
+        Copyright - <strong>San Ciro Sport 2022</strong>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
