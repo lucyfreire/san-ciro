@@ -5,7 +5,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  background: linear-gradient(0deg, rgb(218, 237, 245), rgb(80, 132, 179));
+  background: linear-gradient( rgb(218, 237, 245), rgb(80, 132, 179));
   color: rgb(58, 58, 58);
 }
 
@@ -121,6 +121,7 @@ ul {
   height: 15.5rem;
   border-radius: 4px;
   box-shadow: 1px 1px 4px rgb(0, 0, 0, 0.2);
+  transition: transform 300ms, opacity 500ms;
 }
 
 .product img {
@@ -395,5 +396,13 @@ footer h4 {
   .account-footer-container {
     min-width: 25rem;
     text-align: center;
+  }
+}
+
+@media (max-width: 30rem) {
+  header img {
+    width: 150px;
+    height: 80px;
+    margin: 0 1rem;
   }
 }
