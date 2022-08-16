@@ -7,6 +7,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/b852bc5ca1.js" crossorigin="anonymous"></script>
   <title>San Ciro Sport</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -66,13 +67,19 @@
     <div class="profile-header-container">
       <ul>
         <li> 
-          <a href="#">Mi Cuenta</a>
+          <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal">
+            <i class="fa-solid fa-user fa-2xl"></i>
+          </a>
         </li>
         <li>
-          <a href="#">Favoritos</a>
+          <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal">
+            <i class="fa-solid fa-heart fa-2xl"></i>
+          </a>
         </li>
         <li>
-          <a href="#">Carrito</a>
+          <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal">
+            <i class="fa-solid fa-cart-shopping fa-2xl"></i>
+          </a>
         </li>
       </ul>
     </div>
@@ -127,6 +134,33 @@
     </div>
   </aside>
 
+  <aside aria-label="login-modal">
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModal" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="loginModalLabel">Login</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="email" class="form-label">Email:</label>
+              <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Contraseña:</label>
+              <input type="password" class="form-control" name="password" id="password" placeholder="">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Login</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </aside>
+
   <main>
     <div>
       <h4>
@@ -142,58 +176,74 @@
   <footer>
     <div id="footer-container">
       <div class="about-footer-container">
-        <h4> San Ciro Sport</h4>
+        <h4>San Ciro Sport</h4>
         <ul>
           <li>
-            <a href="#">Quienes somos</a>
+            <a href="contacto.html#quienes-somos">Quienes somos</a>
           </li>
           <li>
-            <a href="#">Sucursales</a>
+            <a href="contacto.html#sucursales">Sucursales</a>
           </li>
           <li>
-            <a href="#">Trabajá con nosotros</a>
+            <a href="contacto.html#contact_form">Trabajá con nosotros</a>
           </li>
         </ul>
       </div>
-  
+
       <div class="account-footer-container">
         <h4> Mi cuenta</h4>
         <ul>
-          <li>
-            <a href="#">Mis datos</a>
+          <li> 
+            <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal">
+              Mis datos
+            </a>
           </li>
-          <li>
-            <a href="#">Mis direcciones</a>
+          <li> 
+            <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal">
+              Mis direcciones
+            </a>
           </li>
-          <li>
-            <a href="#">Mis compras</a>
+          <li> 
+            <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal">
+              Mis compras
+            </a>
           </li>
-          <li>
-            <a href="#">Favoritos</a>
+          <li> 
+            <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal">
+              Favoritos
+            </a>
           </li>
         </ul>
       </div>
-  
+
       <div class="social-footer-container">
         <div>
           <h4>RECIBE NUESTRAS NOVEDADES</h4>
           <form action="#">
-            <input type="email" placeholder="Ingresa tu e-mail" />
+            <input type="email" placeholder="Ingresa tu e-mail"/>
             <button type="submit">Suscribete</button>
           </form>
         </div>
         <div class="social-links">
           <div class="social-link">
-            <a href="https://www.gmail.com" target="_blank">Correo electronico</a>
+            <a href="https://www.gmail.com" target="_blank">
+              <i class="fa-solid fa-envelope fa-2xl"></i>
+            </a>
           </div>
           <div class="social-link">
-            <a href="https://www.facebook.com/salernosanciro" target="_blank">Facebook</a>
+            <a href="https://www.facebook.com/salernosanciro" target="_blank">
+              <i class="fa-brands fa-facebook fa-2xl"></i>
+            </a>
           </div>
           <div class="social-link">
-            <a href="https://www.instagram.com/salernodeportessancirosport/" target="_blank">Instagram</a>
+            <a href="https://www.instagram.com/salernodeportessancirosport/" target="_blank">
+              <i class="fa-brands fa-instagram fa-2xl"></i>
+            </a>
           </div>
           <div class="social-link">
-            <a href="https://web.whatsapp.com/" target="_blank">Whatsapp</a>
+            <a href="https://web.whatsapp.com/" target="_blank">
+              <i class="fa-brands fa-whatsapp fa-2xl"></i>
+            </a>
           </div>
         </div>
       </div>
