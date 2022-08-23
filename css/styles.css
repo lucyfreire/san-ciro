@@ -7,6 +7,14 @@ body {
   background: linear-gradient(#daedf5, #5084b3);
   color: #3a3a3a; }
 
+.formatoButton, header button, footer button, .button button, .add_cart_button, #hamburguer-form button {
+  font: inherit;
+  border: 1px solid #334364;
+  padding: 0.3rem;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white; }
+
 a:hover {
   font-weight: bold;
   color: white; }
@@ -45,20 +53,14 @@ header a, footer a {
 
 header input, footer input {
   font: inherit;
-  padding: 0.3rem;
-  width: 19rem;
   border: 1px solid #90b3ca;
-  border-radius: 4px; }
+  border-radius: 4px;
+  padding: 0.3rem;
+  width: 19rem; }
   header input:focus, footer input:focus {
     background-color: #d9e3f7; }
 
 header button, footer button {
-  font: inherit;
-  border: 1px solid #334364;
-  padding: 0.3rem;
-  border-radius: 4px;
-  cursor: pointer;
-  color: white;
   background-color: #6093b6; }
 
 .brandCard {
@@ -179,13 +181,7 @@ main h2, h3 {
   text-align: center; }
 
 .button button, .add_cart_button {
-  font: inherit;
-  border: 1px solid #334364;
-  padding: 0.3rem;
   width: 10rem;
-  border-radius: 4px;
-  cursor: pointer;
-  color: white;
   background-color: #6093b6; }
   .button button:hover, .add_cart_button:hover {
     background-color: #2486c7; }
@@ -313,22 +309,16 @@ footer h4 {
   align-items: center; }
   #hamburguer-form input {
     font: inherit;
-    padding: 0.5rem;
-    width: 23rem;
     border: 1px solid #90b3ca;
-    border-radius: 4px; }
+    border-radius: 4px;
+    padding: 0.5rem;
+    width: 23rem; }
 
 #hamburguer-form input:focus {
   background-color: #d9e3f7; }
 
 #hamburguer-form button {
-  font: inherit;
   min-width: 6rem;
-  border: 1px solid #334364;
-  padding: 0.5rem;
-  border-radius: 4px;
-  cursor: pointer;
-  color: white;
   background-color: #5492bc; }
   #hamburguer-form button:hover {
     font-weight: bold;

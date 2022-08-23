@@ -36,6 +36,21 @@ body {
   color: $color_p;
 }
 
+.formatoButton {
+  font: inherit;
+  border: 1px solid $main-color-500;
+  padding: 0.3rem;
+  border-radius: 4px;
+  cursor: pointer;
+  color: $color_white;
+}
+
+@mixin input {
+  font: inherit;
+  border: 1px solid $main-color-200;
+  border-radius: 4px;
+}
+
 a:hover {
   font-weight: bold;
   color: $color_white;
@@ -83,11 +98,9 @@ header a, footer a {
 }
 
 header input, footer input {
-  font: inherit;
+  @include input;
   padding: 0.3rem;
   width: 19rem;
-  border: 1px solid $main-color-200;
-  border-radius: 4px; 
 
   &:focus {
     background-color: $color_white_100;
@@ -95,12 +108,7 @@ header input, footer input {
 }
 
 header button, footer button {
-  font: inherit;
-  border: 1px solid $main-color-500;
-  padding: 0.3rem;
-  border-radius: 4px;
-  cursor: pointer;
-  color: $color_white;
+  @extend .formatoButton;
   background-color: $color_blue_200;
 }
 
@@ -255,13 +263,8 @@ main h2, h3 {
 }
 
 .button button, .add_cart_button {
-  font: inherit;
-  border: 1px solid $main-color-500;
-  padding: 0.3rem;
+  @extend .formatoButton;
   width: 10rem;
-  border-radius: 4px;
-  cursor: pointer;
-  color: $color_white;
   background-color: $color_blue_200;
 
   &:hover {
@@ -417,11 +420,9 @@ footer h4 {
   align-items: center;
 
   input {
-    font: inherit;
+    @include input;
     padding: 0.5rem;
     width: 23rem;
-    border: 1px solid $main-color-200;
-    border-radius: 4px; 
   }
 }
 
@@ -430,13 +431,8 @@ footer h4 {
 }
 
 #hamburguer-form button {
-  font: inherit;
+  @extend .formatoButton;
   min-width: 6rem;
-  border: 1px solid $main-color-500;
-  padding: 0.5rem;
-  border-radius: 4px;
-  cursor: pointer;
-  color: $color_white;
   background-color: $color_blue_100;
 
   &:hover {
