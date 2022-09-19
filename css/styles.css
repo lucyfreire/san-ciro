@@ -45,8 +45,7 @@ header h1 {
   margin: 1rem 0; }
 
 header img {
-  width: 300px;
-  height: 125px; }
+  width: 300px; }
 
 header li {
   display: inline; }
@@ -85,6 +84,10 @@ header button, footer button {
   background-color: #305d87;
   color: #f5f5f8;
   padding: 1rem; }
+
+.paddingNav {
+  padding-left: 1rem;
+  padding-right: 3rem; }
 
 header button:hover, footer button:hover {
   background-color: #2486c7; }
@@ -142,7 +145,7 @@ ul {
     object-fit: cover; }
   .product a {
     margin-top: 1rem;
-    color: #2f4778; }
+    color: #081936; }
     .product a:hover {
       font-weight: bold; }
   .product .precio-tachado {
@@ -367,7 +370,31 @@ i {
   margin: 0 auto;
   max-width: 22em; }
 
+.accordionContainer {
+  max-width: 80%;
+  padding-left: 20rem; }
+
+.accesorios-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .accesorios-container img {
+    width: 30rem;
+    max-height: 20rem; }
+
+.blog-container {
+  display: flex; }
+  .blog-container .text-blog {
+    padding: 1rem; }
+
 @media (max-width: 85rem) {
+  .accordionContainer {
+    max-width: 100%;
+    padding-left: 0; }
+  .accesorios-container {
+    flex-direction: column; }
+    .accesorios-container img {
+      width: 22rem; }
   .product-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -389,16 +416,29 @@ i {
 @media (max-width: 65rem) {
   .menu-btn {
     display: flex; }
+  .blog-container {
+    flex-direction: column; }
+    .blog-container img {
+      width: 30rem;
+      max-height: 40rem;
+      margin-bottom: 1rem;
+      margin-left: 5rem; }
+    .blog-container .text-blog {
+      padding: 0; }
   .main-header-container {
     display: none; }
   .image_contact {
-    max-width: 55rem; }
+    max-width: 50rem; }
   .product-container {
     grid-template-columns: 1fr 1fr; } }
 
 @media (max-width: 48rem) {
   .profile-header-container {
     margin: 0; }
+  .blog-container img {
+    margin-left: 3rem;
+    width: 20rem;
+    max-height: 30rem; }
   .profile-header-container ul {
     text-align: center; }
   #quienes-somos {
@@ -418,7 +458,7 @@ i {
   .product-container {
     grid-template-columns: 1fr; }
   .image_contact {
-    max-width: 30rem; }
+    max-width: 28rem; }
   footer {
     padding: 0.5rem;
     display: flex;
@@ -442,7 +482,7 @@ i {
     margin: 0 1rem; }
   .image_contact {
     margin: 0;
-    max-width: 22rem;
+    max-width: 20rem;
     max-height: 15rem; }
   .control_container {
     max-width: 20rem; }

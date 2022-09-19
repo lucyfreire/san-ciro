@@ -22,8 +22,7 @@ $main-color-400: rgb(16, 78, 136);
 $main-color-500: rgb(51, 67, 100);
 
 $color_dark_blue_100: rgb(65, 65, 177);
-$color_dark_blue_200: rgb(47, 71, 120);
-$color_dark_blue_300: rgb(8, 25, 54);
+$color_dark_blue_200: rgb(8, 25, 54);
 
 $bp_lg: 85rem;
 $bp_md: 65rem;
@@ -88,7 +87,6 @@ header h1 {
 
 header img {
   width: 300px;
-  height: 125px;
 }
 
 header li {
@@ -140,6 +138,11 @@ header button, footer button {
   padding: 1rem;
 }
 
+.paddingNav {
+  padding-left: 1rem;
+  padding-right: 3rem;
+}
+
 header button:hover, footer button:hover {
   background-color: $color_blue_300;
 }
@@ -172,7 +175,7 @@ ul {
 
 .products {
   text-align: center;
-  color: $color_dark_blue_300;
+  color: $color_dark_blue_200;
 }
 
 .products h3 {
@@ -498,7 +501,43 @@ i {
   }
 }
 
+.accordionContainer {
+  max-width: 80%;
+  padding-left: 20rem;
+}
+
+.accesorios-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  img {
+    width: 30rem;
+    max-height: 20rem;
+  }
+}
+
+.blog-container {
+  display: flex;
+
+  .text-blog {
+    padding: 1rem;
+  }
+}
+
 @media (max-width: $bp_lg) {
+  .accordionContainer {
+    max-width: 100%;
+    padding-left: 0;
+  }
+
+  .accesorios-container {
+    flex-direction: column;
+
+    img {
+      width: 22rem;
+    }
+  }
+
   .product-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -527,12 +566,27 @@ i {
     display: flex;
   }
 
+  .blog-container {
+    flex-direction: column;
+
+    img {
+      width: 30rem;
+      max-height: 40rem;
+      margin-bottom: 1rem;
+      margin-left: 5rem;
+    }
+
+    .text-blog {
+      padding: 0;
+    }
+  }
+
   .main-header-container {
     display: none;
   }
 
   .image_contact {
-    max-width: 55rem;
+    max-width: 50rem;
   }
 
   .product-container {
@@ -543,6 +597,14 @@ i {
 @media (max-width: $bp_sm) {
   .profile-header-container {
     margin: 0;
+  }
+
+  .blog-container {
+    img {
+      margin-left: 3rem;
+      width: 20rem;
+      max-height: 30rem;
+    }
   }
 
   .profile-header-container ul {
@@ -580,7 +642,7 @@ i {
   }
 
   .image_contact {
-    max-width: 30rem;
+    max-width: 28rem;
   }
 
   footer {
@@ -615,7 +677,7 @@ i {
 
   .image_contact {
     margin: 0;
-    max-width: 22rem;
+    max-width: 20rem;
     max-height: 15rem;
   }
 
