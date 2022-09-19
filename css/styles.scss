@@ -23,7 +23,7 @@ $main-color-500: rgb(51, 67, 100);
 
 $color_dark_blue_100: rgb(65, 65, 177);
 $color_dark_blue_200: rgb(47, 71, 120);
-$color_dark_blue_300: rgb(16, 37, 78);
+$color_dark_blue_300: rgb(8, 25, 54);
 
 $bp_lg: 85rem;
 $bp_md: 65rem;
@@ -134,6 +134,11 @@ header button, footer button {
   object-fit: cover;
 }
 
+.envio {
+  background-color: $color_blue_400;
+  color: $color_white_200;
+  padding: 1rem;
+}
 
 header button:hover, footer button:hover {
   background-color: $color_blue_300;
@@ -163,7 +168,6 @@ ul {
   text-align: center;
   font-weight: bold;
   margin-bottom: 2rem;
-  font-style: oblique;
 }
 
 .products {
@@ -189,7 +193,7 @@ ul {
   border: 1px solid $color_dark_blue_100;
   overflow: hidden;
   width: 20rem;
-  height: 16.5rem;
+  height: 21rem;
   border-radius: 4px;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
   transition: transform 300ms, opacity 500ms;
@@ -200,8 +204,9 @@ ul {
   }
 
   img {
-    height: 10.5rem;
+    height: 13.5rem;
     width: 100%;
+    object-fit: cover;
   }
 
   a {
@@ -211,6 +216,19 @@ ul {
     &:hover {
       font-weight: bold;
     }
+  }
+
+  .precio-tachado {
+    color: $main-color-400;
+    font-size: 0.9rem;
+    margin-right: 0.3rem;
+    text-decoration: line-through;
+  }
+
+  .precio {
+    font-weight: 600;
+    color: $color_blue_500;
+    font-size: 1.1rem;
   }
 }
 
@@ -279,7 +297,6 @@ main h2, h3 {
 
 .container_add_cart_button {
   text-align: center;
-  margin-top: 0.5rem;
 }
 
 .list_blog {
@@ -492,6 +509,17 @@ i {
   .detail_container_button {
     flex-direction: column;
   }
+}
+
+.detalle-precio-tachado {
+  color: $main-color-400;
+  margin-right: 0.8rem;
+  text-decoration: line-through;
+}
+
+.detalle-precio {
+  font-size: 1.7rem;
+  color: $color_blue_500;
 }
 
 @media (max-width: $bp_md) {
